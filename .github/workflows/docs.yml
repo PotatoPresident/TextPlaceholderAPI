@@ -1,7 +1,11 @@
 name: Update docs
 
 on:
-  workflow_dispatch:
+  push:
+    branches:
+      - '1.17'
+    paths:
+      - 'docs/**'
 
 jobs:
   build:
